@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unreal Cute — Doodles & Stickers</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- basic SEO / social preview -->
+  <meta name="description" content="Unreal Cute — playful doodles and stickers.">
+  <meta property="og:title" content="Unreal Cute — Doodles & Stickers">
+  <meta property="og:description" content="A cute demo site to show doodles, stickers, and tiny animations.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <!-- replace sticker1.png with your chosen frame/png -->
+      <img src="images/sticker1.png" alt="logo sticker" class="logo-sticker" id="logoSticker">
+      <div class="brand">
+        <h1>Unreal Cute</h1>
+        <p class="tag">doodles, stickers & smiles</p>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-left">
+        <h2 class="hero-title">Make everything a little cuter ✨</h2>
+        <p class="hero-sub">Stickers, doodles and micro-interactions to add personality to your pages.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#gallery">See the doodles</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- large doodle image -->
+        <div class="doodle-wrap">
+          <img src="images/doodle1.png" alt="hero doodle" class="hero-doodle" id="heroDoodle">
+          <!-- floating sticker, positioned absolute via CSS -->
+          <img src="images/sticker2.png" alt="floating sticker" class="floating-sticker" id="float1">
+          <img src="images/sticker1.png" alt="small floating" class="floating-sticker small" id="float2">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h3>Features</h3>
+      <div class="feature-grid">
+        <article class="feature">
+          <h4>Responsive</h4>
+          <p>Looks great on mobile and desktop — fluid layout and readable fonts.</p>
+        </article>
+        <article class="feature">
+          <h4>Floating stickers</h4>
+          <p>Delightful floating micro-animations to bring smiles to visitors.</p>
+        </article>
+        <article class="feature">
+          <h4>Gallery</h4>
+          <p>Showcase your stickers and doodles in a playful grid.</p>
+        </article>
+        <article class="feature">
+          <h4>Easy deploy</h4>
+          <p>Ready to push to GitHub Pages. No build step required.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h3>Gallery</h3>
+      <div class="grid">
+        <!-- placeholders; replace/add images as needed -->
+        <div class="card"><img src="images/sticker1.png" alt="sticker sample"></div>
+        <div class="card"><img src="images/sticker2.png" alt="sticker sample"></div>
+        <div class="card"><img src="images/doodle1.png" alt="doodle sample"></div>
+        <div class="card"><img src="images/sticker1.png" alt="sticker sample"></div>
+        <div class="card"><img src="images/sticker2.png" alt="sticker sample"></div>
+        <div class="card"><img src="images/doodle1.png" alt="doodle sample"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact</h3>
+      <form id="contactForm" class="contact-form" onsubmit="return false;">
+        <div class="row">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" placeholder="Email" required>
+        </div>
+        <textarea name="message" placeholder="Say hi..." rows="4"></textarea>
+        <div class="form-actions">
+          <button class="btn primary" id="submitBtn">Send</button>
+          <span class="msg" id="formMsg" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Made with ♥ and lots of stickers — Unreal Cute</p>
+      <small>Built for demo — replace images with your own.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
